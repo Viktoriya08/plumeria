@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang="ru"><head><title>Plumeria: Список страниц</title><meta name="description" content="Plumeria: агенство продажи и аренды недвижимости"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/svg+xml" href="./favicon.svg"><link rel="shortcut icon" href="./favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png"><link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap&amp;text=%E2%82%BD%24%E0%B8%BF" rel="stylesheet"><meta property="og:image" content="http://projects.cedro.agency/plumeria/web-app-manifest-512x512.png"><meta property="twitter:image" content="http://projects.cedro.agency/plumeria/web-app-manifest-512x512.png"><meta name="twitter:card" content="summary_large_image"><meta property="fb:image" content="http://projects.cedro.agency/plumeria/web-app-manifest-512x512.png"><meta property="vk:image" content="http://projects.cedro.agency/plumeria/web-app-manifest-512x512.png"><meta name="format-detection" content="telephone=no"><link rel="preload" href="./fonts/montreal/PPNeueMontrealMono-Medium.woff2" as="font" type="font/woff2" crossorigin><script data-skip-moving="true">var ASSETS_PATH = './'
+</script>  <script type="module" crossorigin src="./assets/main.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main.css">
+</head><body><noscript><div class="noscript">Для полноценной работы сайта, необходимо включить JavaScript!</div></noscript><script>(() => {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', ASSETS_PATH + 'img/sprite.svg', true);
+  xhr.send();
+  xhr.onload = () => {
+    const div = document.createElement('div');
+    div.className = 'visually-hidden';
+    div.innerHTML = xhr.responseText;
+    document.body.insertBefore(div, document.body.childNodes[0]);
+  }
+})();</script><div class="page"><div class="page__core"><style>* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'PP Neue Montreal Mono', 'Courier New', 'Nimbus Mono L', monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 5vw;
+  padding: 5vw;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 2vw 4vw;
+  font-family: monospace;
+}
+
+section {
+  padding: 2rem;
+  background-color: var(--color-bg-accent);
+  box-shadow: 0 5px 30px rgba(0 0 0 / 0.04);
+  min-width: 1px;
+}
+
+h1 {
+  font-size: clamp(16px, 9vw, 94px);
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: clamp(16px, 4vw, 32px);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+ol {
+  list-style-type: decimal;
+  margin: 0;
+  padding-inline-start: calc(1em + 2rem);
+}
+
+li {
+  font-size: 1.6rem;
+  line-height: 1;
+  margin: 10px 0;
+}
+
+a {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: calc(100% - 1em + 2rem);
+  flex: 0 1 auto;
+  text-decoration: none;
+  color: var(--color-txt-primary);
+  transition: 0.15s ease;
+  transition-property: color, opacity;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  transform: scale(0);
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transition: transform 0.35s ease;
+  transform-origin: right;
+}
+
+a:where(:hover, :focus-visible) {
+  color: #111;
+  opacity: 0.7;
+}
+
+a:where(:hover, :focus-visible)::before {
+  transform: scale(1);
+  transform-origin: left;
+}
+
+a:active {
+  opacity: 0.5;
+}
+
+a .text-muted {
+  color: var(--color-txt-secondary);
+  text-align: right;
+}
+
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  a {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  a .text-muted {
+    text-align: left;
+  }
+}
+</style><main class="container"><h1>Список страниц</h1><div class="wrapper"><section><h2>Проектные</h2><ol><li><a href="index.html"><span>Главная</span><span class="text-muted">(index.html)</span></a></li><li><a href="catalog.html"><span>Каталог - Продажа</span><span class="text-muted">(catalog.html)</span></a></li><li><a href="catalog-rent.html"><span>Каталог - Аренда</span><span class="text-muted">(catalog-rent.html)</span></a></li><li><a href="catalog-null.html"><span>Каталог - не найдено</span><span class="text-muted">(catalog-null.html)</span></a></li><li><a href="product.html"><span>Карточка товара (Продажа)</span><span class="text-muted">(product.html)</span></a></li><li><a href="product-rent.html"><span>Карточка товара (Аренда)</span><span class="text-muted">(product-rent.html)</span></a></li><li><a href="404.html"><span>Ошибка</span><span class="text-muted">(404.html)</span></a></li><li><a href="politic.html"><span>Политика</span><span class="text-muted">(politic.html)</span></a></li><li><a href="cookie.html"><span>Кукисы</span><span class="text-muted">(cookie.html)</span></a></li><li><a href="faq.html"><span>Вопрос-ответ</span><span class="text-muted">(faq.html)</span></a></li><li><a href="contacts.html"><span>Контакты</span><span class="text-muted">(contacts.html)</span></a></li><li><a href="management.html"><span>Управление недвижимостью</span><span class="text-muted">(management.html)</span></a></li><li><a href="about.html"><span>О компании</span><span class="text-muted">(about.html)</span></a></li></ol></section><section><h2>Сервисные</h2><ol><li><a href="ui-kit.html"><span>UI-kit</span><span class="text-muted">(ui-kit.html)</span></a></li><li><a href="modals.html"><span>Модалки</span><span class="text-muted">(modals.html)</span></a></li></ol></section></div></main></div></div></body></html>

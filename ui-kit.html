@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="ru"><head><title>Plumeria: UI-kit</title><meta name="description" content="Plumeria: агенство продажи и аренды недвижимости"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/svg+xml" href="./favicon.svg"><link rel="shortcut icon" href="./favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png"><link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap&amp;text=%E2%82%BD%24%E0%B8%BF" rel="stylesheet"><meta property="og:image" content="http://projects.cedro.agency/plumeria/web-app-manifest-512x512.png"><meta property="twitter:image" content="http://projects.cedro.agency/plumeria/web-app-manifest-512x512.png"><meta name="twitter:card" content="summary_large_image"><meta property="fb:image" content="http://projects.cedro.agency/plumeria/web-app-manifest-512x512.png"><meta property="vk:image" content="http://projects.cedro.agency/plumeria/web-app-manifest-512x512.png"><meta name="format-detection" content="telephone=no"><link rel="preload" href="./fonts/montreal/PPNeueMontrealMono-Medium.woff2" as="font" type="font/woff2" crossorigin><script data-skip-moving="true">var ASSETS_PATH = './'
+</script>  <script type="module" crossorigin src="./assets/main.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main.css">
+</head><body><noscript><div class="noscript">Для полноценной работы сайта, необходимо включить JavaScript!</div></noscript><script>(() => {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', ASSETS_PATH + 'img/sprite.svg', true);
+  xhr.send();
+  xhr.onload = () => {
+    const div = document.createElement('div');
+    div.className = 'visually-hidden';
+    div.innerHTML = xhr.responseText;
+    document.body.insertBefore(div, document.body.childNodes[0]);
+  }
+})();</script><div class="page"><div class="page__core"><style>* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  padding: 50px;
+  min-height: 100vh;
+  background: #eee;
+}
+
+.container__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  gap: 50px;
+}
+
+.container__box {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+  border: 1px solid #6d5368;
+  background-color: #45445f8f;
+}
+
+.container__title {
+  width: 100%;
+}
+</style><main class="container"><div class="wrapper container__wrapper"><div class="container__box"><h2 class="container__title">Buttons</h2><button class="btn btn--size-l btn--var-primary" type="button"><div class="btn__text">var: primary, size: L</div><svg class="icn btn__icn" width="16" height="16" aria-hidden="true" role="img"><use href="#icn-arrow-link"></use></svg></button><button class="btn btn--size-m btn--var-invert" type="button"><div class="btn__text">type: invert, size: M</div><svg class="icn btn__icn" width="12" height="12" aria-hidden="true" role="img"><use href="#icn-map"></use></svg></button><button class="btn btn--size-l btn--var-secondary" type="button"><div class="btn__text">type: secondary, size: L</div></button><button class="btn btn--sheet" type="button">в каталог</button><button class="btn btn--play" type="button"><svg class="icn btn__icn" width="24" height="24" aria-hidden="true" role="img"><use href="#icn-play"></use></svg></button><button class="btn-circle" type="button"><svg class="icn btn-circle__icn" width="16" height="16" aria-hidden="true" role="img"><use href="#icn-arrow-link-up"></use></svg></button><button class="btn-circle btn-circle--var-secondary" type="button"><svg class="icn btn-circle__icn" width="16" height="16" aria-hidden="true" role="img"><use href="#icn-menu-2"></use></svg></button><button class="btn-circle btn-circle--var-secondary-invert" type="button"><svg class="icn btn-circle__icn" width="16" height="16" aria-hidden="true" role="img"><use href="#icn-menu-2"></use></svg></button><button class="btn-circle btn-circle--var-secondary-invert" type="button"><div class="btn-circle__equalizer"><span class="btn-circle__equalizer-el"></span><span class="btn-circle__equalizer-el"></span><span class="btn-circle__equalizer-el"></span><span class="btn-circle__equalizer-el"></span><span class="btn-circle__equalizer-el"></span><span class="btn-circle__equalizer-el"></span><span class="btn-circle__equalizer-el"></span></div></button></div><div class="container__box"><h2 class="container__title">Links</h2><a class="link" href="#"><span class="link__text">Link [default]</span></a><a class="link link--primary" href="#"><span class="link__text">Link primary</span></a></div><div class="container__box"><h2 class="container__title">Notifications</h2><button class="btn btn--size-l btn--var-primary" type="button" data-toast="trigger"><div class="btn__text">Notification: Default</div></button><button class="btn btn--size-l btn--var-primary" type="button" data-toast="trigger" data-toast-size="m"><div class="btn__text">Notification: Size=M</div></button><button class="btn btn--size-l btn--var-primary" type="button" data-toast="trigger" data-toast-text="Custom Text"><div class="btn__text">Notification: 'Custom-Text'</div></button></div><div class="container__box"><h2 class="container__title">Tag</h2><span class="tag tag--var-black tag--size-l">var: 'black', size: 'l'</span></div><div class="container__box"><h2 class="container__title">Calendar</h2><input class="js-calendar-input" type="text"></div><div class="container__box"><h2 class="container__title">Range</h2><div class="range js-range"><div class="range__display"><label class="range__result"><span class="range__text">от</span><input class="range__input" type="text" data-range="input-min" name="price-rub-min" value="0" data-base-value=""><span class="range__units">₽</span></label><span class="range__dash" aria-hidden="true"></span><label class="range__result"><span class="range__text">до</span><input class="range__input" type="text" data-range="input-max" name="price-rub-max" value="1000990" data-base-value=""><span class="range__units">₽</span></label></div><div class="range__slider" data-range="slider" data-range-name="price-rub" data-min="0" data-max="1000990" data-start-min="0" data-start-max="1000990"></div></div><div class="range js-range"><div class="range__display"><label class="range__result"><span class="range__text">от</span><input class="range__input" type="text" data-range="input-min" name="price-usd-min" value="2000" data-base-value=""><span class="range__units">$</span></label><span class="range__dash" aria-hidden="true"></span><label class="range__result"><span class="range__text">до</span><input class="range__input" type="text" data-range="input-max" name="price-usd-max" value="3000" data-base-value=""><span class="range__units">$</span></label></div><div class="range__slider" data-range="slider" data-range-name="price-usd" data-min="2000" data-max="3000" data-start-min="2000" data-start-max="3000"></div></div></div></div></main></div></div></body></html>
